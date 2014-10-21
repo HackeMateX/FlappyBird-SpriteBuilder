@@ -25,17 +25,6 @@
     
 }
 
-// Increment the time since the last obstacle was added
-timeSinceObstacle += delta; // delta is approximately 1/60th of a second
 
-// Check to see if two seconds have passed
-if (timeSinceObstacle > 2.0f)
-{
-    // Add a new obstacle
-    [self addObstacle];
-    
-    // Then reset the timer.
-    timeSinceObstacle = 0.0f;
-}
 
 @end
